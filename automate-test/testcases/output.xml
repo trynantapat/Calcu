@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240809 13:35:30.965" rpa="false" schemaversion="4">
+<suite id="s1" name="TC-001" source="C:\testcal\courserobot\automate-test\testcases\TC-001.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240809 13:35:31.419" level="INFO">Opening browser 'chrome' to base url 'https://www.calculator.net/'.</msg>
+<status status="PASS" starttime="20240809 13:35:31.418" endtime="20240809 13:35:35.379"/>
+</kw>
+<test id="s1-t1" name="As a user, want to calculator" line="12">
+<kw name="PressNumber" library="NumberKeywords">
+<arg>1</arg>
+<kw name="Replace String" library="String">
+<var>${new_locator}</var>
+<arg>${Numpad}</arg>
+<arg>@#string@#</arg>
+<arg>${pressnum}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20240809 13:35:35.386" level="INFO">${new_locator} = xpath=//span[text()='1']</msg>
+<status status="PASS" starttime="20240809 13:35:35.386" endtime="20240809 13:35:35.386"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240809 13:35:35.389" level="INFO">Clicking element 'xpath=//span[text()='1']'.</msg>
+<status status="PASS" starttime="20240809 13:35:35.387" endtime="20240809 13:35:35.476"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:35.386" endtime="20240809 13:35:35.476"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240809 13:35:36.478" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240809 13:35:35.476" endtime="20240809 13:35:36.478"/>
+</kw>
+<kw name="PressNumber" library="NumberKeywords">
+<arg>–</arg>
+<kw name="Replace String" library="String">
+<var>${new_locator}</var>
+<arg>${Numpad}</arg>
+<arg>@#string@#</arg>
+<arg>${pressnum}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20240809 13:35:36.489" level="INFO">${new_locator} = xpath=//span[text()='–']</msg>
+<status status="PASS" starttime="20240809 13:35:36.488" endtime="20240809 13:35:36.489"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240809 13:35:36.490" level="INFO">Clicking element 'xpath=//span[text()='–']'.</msg>
+<status status="PASS" starttime="20240809 13:35:36.489" endtime="20240809 13:35:36.583"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:36.478" endtime="20240809 13:35:36.584"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240809 13:35:37.586" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240809 13:35:36.584" endtime="20240809 13:35:37.586"/>
+</kw>
+<kw name="PressNumber" library="NumberKeywords">
+<arg>2</arg>
+<kw name="Replace String" library="String">
+<var>${new_locator}</var>
+<arg>${Numpad}</arg>
+<arg>@#string@#</arg>
+<arg>${pressnum}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20240809 13:35:37.588" level="INFO">${new_locator} = xpath=//span[text()='2']</msg>
+<status status="PASS" starttime="20240809 13:35:37.587" endtime="20240809 13:35:37.588"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240809 13:35:37.589" level="INFO">Clicking element 'xpath=//span[text()='2']'.</msg>
+<status status="PASS" starttime="20240809 13:35:37.588" endtime="20240809 13:35:37.651"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:37.587" endtime="20240809 13:35:37.651"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240809 13:35:38.652" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240809 13:35:37.652" endtime="20240809 13:35:38.652"/>
+</kw>
+<kw name="PressNumber" library="NumberKeywords">
+<arg>×</arg>
+<kw name="Replace String" library="String">
+<var>${new_locator}</var>
+<arg>${Numpad}</arg>
+<arg>@#string@#</arg>
+<arg>${pressnum}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20240809 13:35:38.654" level="INFO">${new_locator} = xpath=//span[text()='×']</msg>
+<status status="PASS" starttime="20240809 13:35:38.653" endtime="20240809 13:35:38.654"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240809 13:35:38.654" level="INFO">Clicking element 'xpath=//span[text()='×']'.</msg>
+<status status="PASS" starttime="20240809 13:35:38.654" endtime="20240809 13:35:38.710"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:38.653" endtime="20240809 13:35:38.710"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240809 13:35:39.713" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240809 13:35:38.711" endtime="20240809 13:35:39.713"/>
+</kw>
+<kw name="PressNumber" library="NumberKeywords">
+<arg>1</arg>
+<kw name="Replace String" library="String">
+<var>${new_locator}</var>
+<arg>${Numpad}</arg>
+<arg>@#string@#</arg>
+<arg>${pressnum}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20240809 13:35:39.717" level="INFO">${new_locator} = xpath=//span[text()='1']</msg>
+<status status="PASS" starttime="20240809 13:35:39.716" endtime="20240809 13:35:39.717"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240809 13:35:39.719" level="INFO">Clicking element 'xpath=//span[text()='1']'.</msg>
+<status status="PASS" starttime="20240809 13:35:39.717" endtime="20240809 13:35:39.805"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:39.715" endtime="20240809 13:35:39.805"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240809 13:35:40.806" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240809 13:35:39.806" endtime="20240809 13:35:40.806"/>
+</kw>
+<kw name="PressNumber" library="NumberKeywords">
+<arg>+</arg>
+<kw name="Replace String" library="String">
+<var>${new_locator}</var>
+<arg>${Numpad}</arg>
+<arg>@#string@#</arg>
+<arg>${pressnum}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20240809 13:35:40.808" level="INFO">${new_locator} = xpath=//span[text()='+']</msg>
+<status status="PASS" starttime="20240809 13:35:40.807" endtime="20240809 13:35:40.808"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240809 13:35:40.809" level="INFO">Clicking element 'xpath=//span[text()='+']'.</msg>
+<status status="PASS" starttime="20240809 13:35:40.808" endtime="20240809 13:35:40.893"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:40.807" endtime="20240809 13:35:40.893"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240809 13:35:41.894" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240809 13:35:40.893" endtime="20240809 13:35:41.894"/>
+</kw>
+<kw name="PressNumber" library="NumberKeywords">
+<arg>8</arg>
+<kw name="Replace String" library="String">
+<var>${new_locator}</var>
+<arg>${Numpad}</arg>
+<arg>@#string@#</arg>
+<arg>${pressnum}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20240809 13:35:41.896" level="INFO">${new_locator} = xpath=//span[text()='8']</msg>
+<status status="PASS" starttime="20240809 13:35:41.896" endtime="20240809 13:35:41.896"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240809 13:35:41.897" level="INFO">Clicking element 'xpath=//span[text()='8']'.</msg>
+<status status="PASS" starttime="20240809 13:35:41.897" endtime="20240809 13:35:41.970"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:41.895" endtime="20240809 13:35:41.970"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240809 13:35:42.970" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240809 13:35:41.970" endtime="20240809 13:35:42.970"/>
+</kw>
+<kw name="PressNumber" library="NumberKeywords">
+<arg>/</arg>
+<kw name="Replace String" library="String">
+<var>${new_locator}</var>
+<arg>${Numpad}</arg>
+<arg>@#string@#</arg>
+<arg>${pressnum}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20240809 13:35:42.972" level="INFO">${new_locator} = xpath=//span[text()='/']</msg>
+<status status="PASS" starttime="20240809 13:35:42.971" endtime="20240809 13:35:42.972"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240809 13:35:42.974" level="INFO">Clicking element 'xpath=//span[text()='/']'.</msg>
+<status status="PASS" starttime="20240809 13:35:42.973" endtime="20240809 13:35:43.059"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:42.971" endtime="20240809 13:35:43.059"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240809 13:35:44.061" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240809 13:35:43.060" endtime="20240809 13:35:44.061"/>
+</kw>
+<kw name="PressNumber" library="NumberKeywords">
+<arg>1</arg>
+<kw name="Replace String" library="String">
+<var>${new_locator}</var>
+<arg>${Numpad}</arg>
+<arg>@#string@#</arg>
+<arg>${pressnum}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20240809 13:35:44.062" level="INFO">${new_locator} = xpath=//span[text()='1']</msg>
+<status status="PASS" starttime="20240809 13:35:44.061" endtime="20240809 13:35:44.062"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240809 13:35:44.064" level="INFO">Clicking element 'xpath=//span[text()='1']'.</msg>
+<status status="PASS" starttime="20240809 13:35:44.062" endtime="20240809 13:35:44.128"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:44.061" endtime="20240809 13:35:44.128"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240809 13:35:45.132" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240809 13:35:44.132" endtime="20240809 13:35:45.132"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:35.380" endtime="20240809 13:35:45.133"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240809 13:35:45.134" endtime="20240809 13:35:47.833"/>
+</kw>
+<status status="PASS" starttime="20240809 13:35:30.967" endtime="20240809 13:35:47.833"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC-001">TC-001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
